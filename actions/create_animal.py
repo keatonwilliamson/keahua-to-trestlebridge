@@ -83,7 +83,7 @@ def create_animal_one_habitat(biome1, arb, animal):
         print( ''' +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+
  |  K  e  a  h  u  a    A  r  b  o  r  e  t  u  m  |
  +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+\n''')
-        print("Uh Oh! There are no biomes for this animal to live in. Please go create a biome for this animal.")
+        print("Uh Oh! There are no facilities for this animal to live in. Please go create a facility for this animal.")
         input("\n\nPress enter to continue...")
     else: 
         animal_list = list()
@@ -118,7 +118,7 @@ def create_animal_one_habitat(biome1, arb, animal):
                 print( ''' +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+
 |  K  e  a  h  u  a    A  r  b  o  r  e  t  u  m  |
 +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+\n''')
-                print(F'Success! The {animal.species} has been added to the biome!')
+                print(F'Success! The {animal.species} has been added to the facility')
                 input("\n\nPress enter to continue...")
             except: 
                 create_animal_one_habitat(biome1, arb, animal)

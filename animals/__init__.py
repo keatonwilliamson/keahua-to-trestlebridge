@@ -7,3 +7,5 @@ from .kikakapu import Kikakapu
 from .nenegoose import nenegoose
 from .opeapea import Opeapea
 from .pueo import Pueo
+
+from .Chicken import Chicken

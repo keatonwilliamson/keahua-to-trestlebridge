@@ -1,6 +1,7 @@
 # Author: Lauren Riddle
 # Purpose: Holds the choices that call the create a new animal function
 from animals import RiverDolphin, nenegoose, Ulae, Kikakapu, Pueo, Opeapea, HHFSpider, GDDGecko
+from animals import Chicken
 import os
 from .create_animal import create_animal_two_habitats, create_animal_one_habitat
 def release_animal(arboretum):
@@ -14,7 +15,16 @@ def release_animal(arboretum):
  +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+\n''')
 
     # creates the add animal menu
-    print("1. River Dolphin")
+    # print("1. River Dolphin")
+    # print("2. Gold Dust Day Gecko")
+    # print("3. Nene Goose")
+    # print("4. Kikakapu")
+    # print("5. Pueo")
+    # print("6. 'Ulae")
+    # print("7. Ope'ape'a")
+    # print("8. Happy-Face Spider")
+
+    print("1. Chicken")
     print("2. Gold Dust Day Gecko")
     print("3. Nene Goose")
     print("4. Kikakapu")
@@ -32,8 +42,8 @@ Type M to return to the main menu.
 > ''')
 
     if choice == "1":
-        animal = RiverDolphin()
-        create_animal_two_habitats(arboretum.rivers, arboretum.coastlines, arboretum, animal)
+        animal = Chicken()
+        create_animal_one_habitat(arboretum.chickenHouses, arboretum, animal)
 
 
     if choice == "2":
