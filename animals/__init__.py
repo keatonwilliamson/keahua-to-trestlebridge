@@ -9,3 +9,4 @@ from .opeapea import Opeapea
 from .pueo import Pueo
 
 from .Chicken import Chicken
+from .Duck import Duck

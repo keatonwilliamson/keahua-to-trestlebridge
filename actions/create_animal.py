@@ -124,5 +124,5 @@ def create_animal_one_habitat(biome1, arb, animal):
                 create_animal_one_habitat(biome1, arb, animal)
         else: 
             # print this if there are biomes created but they are all full
-            print("Uh-oh! It looks like all of the biomes are full! Please go create a new Habitat for this animal to live in.")
+            print("Uh-oh! It looks like all of the facilities are full! Please go create a new Facility for this animal to live in.")
             input("\n\nPress enter to continue...")

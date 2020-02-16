@@ -1,7 +1,7 @@
 # Author: Lauren Riddle
 # Purpose: Holds the choices that call the create a new animal function
 from animals import RiverDolphin, nenegoose, Ulae, Kikakapu, Pueo, Opeapea, HHFSpider, GDDGecko
-from animals import Chicken
+from animals import Chicken, Duck
 import os
 from .create_animal import create_animal_two_habitats, create_animal_one_habitat
 def release_animal(arboretum):
@@ -25,7 +25,7 @@ def release_animal(arboretum):
     # print("8. Happy-Face Spider")
 
     print("1. Chicken")
-    print("2. Gold Dust Day Gecko")
+    print("2. Duck")
     print("3. Nene Goose")
     print("4. Kikakapu")
     print("5. Pueo")
@@ -48,8 +48,8 @@ Type M to return to the main menu.
 
     if choice == "2":
         os.system("cls" if os.name == "nt" else "clear")
-        animal = GDDGecko()
-        create_animal_one_habitat(arboretum.forests, arboretum, animal)
+        animal = Duck()
+        create_animal_one_habitat(arboretum.duckHouses, arboretum, animal)
 
 
     if choice == "3":
