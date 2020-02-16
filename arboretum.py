@@ -11,45 +11,67 @@ class Arboretum:
         self.__name = name
         self.__address = address
         self.__biomes = {
-            "rivers": [],
-            "coastlines": [],
-            "forests": [],
-            "grasslands": [],
-            "mountains": [],
-            "swamps": [],
+            # "rivers": [],
+            # "coastlines": [],
+            # "forests": [],
+            # "grasslands": [],
+            # "mountains": [],
+            # "swamps": [],
+            "grazingFields": [],
+            "plowedFields": [],
+            "naturalFields": [],
+            "chickenHouses": [],
+            "duckHouses": []
         }
 
     @property
-    def name(self):
-        return self.__name
-
+    def grazingFields(self):
+        return self.__biomes["grazingFields"]
     @property
-    def address(self):
-        return self.__address
-
+    def plowedFields(self):
+        return self.__biomes["plowedFields"]
     @property
-    def rivers(self):
-        return self.__biomes["rivers"]
-
+    def naturalFields(self):
+        return self.__biomes["naturalFields"]
     @property
-    def coastlines(self):
-        return self.__biomes["coastlines"]
-
+    def chickenHouses(self):
+        return self.__biomes["chickenHouses"]
     @property
-    def forests(self):
-        return self.__biomes["forests"]
+    def duckHouses(self):
+        return self.__biomes["duckHouses"]
 
-    @property
-    def grasslands(self):
-        return self.__biomes["grasslands"]
 
-    @property
-    def mountains(self):
-        return self.__biomes["mountains"]
+    # @property
+    # def name(self):
+    #     return self.__name
 
-    @property
-    def swamps(self):
-        return self.__biomes["swamps"]
+    # @property
+    # def address(self):
+    #     return self.__address
+
+    # @property
+    # def rivers(self):
+    #     return self.__biomes["rivers"]
+
+    # @property
+    # def coastlines(self):
+    #     return self.__biomes["coastlines"]
+
+    # @property
+    # def forests(self):
+    #     return self.__biomes["forests"]
+
+    # @property
+    # def grasslands(self):
+    #     return self.__biomes["grasslands"]
+
+    # @property
+    # def mountains(self):
+    #     return self.__biomes["mountains"]
+
+    # @property
+    # def swamps(self):
+    #     return self.__biomes["swamps"]
 
     @property
     def biomes(self):

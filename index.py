@@ -49,10 +49,10 @@ def build_menu():
     print( ''' +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+
  |  K  e  a  h  u  a    A  r  b  o  r  e  t  u  m  |
  +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+\n''')
-    print("1. Annex Habitat")
-    print("2. Release Animal into Habitat")
-    print("3. Feed Animal")
-    print("4. Add Plant to Habitat")
+    print("1. Create Facility")
+    print("2. Purchase Animals")
+    print("3. Keahua Feed Animal")
+    print("4. Purchase Seeds")
     print("5. Display Facility Report")
     print("6. Exit")
 
