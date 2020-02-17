@@ -1,7 +1,7 @@
 # Author: Lauren Riddle
 # Purpose: Holds the choices that call the create a new animal function
 from animals import RiverDolphin, nenegoose, Ulae, Kikakapu, Pueo, Opeapea, HHFSpider, GDDGecko
-from animals import Chicken, Duck
+from animals import Chicken, Duck, Cow, Goat, Ostrich, Pig, Sheep
 import os
 from .create_animal import create_animal_two_habitats, create_animal_one_habitat
 def release_animal(arboretum):
@@ -25,13 +25,13 @@ def release_animal(arboretum):
     # print("8. Happy-Face Spider")
 
     print("1. Chicken")
-    print("2. Duck")
-    print("3. Nene Goose")
-    print("4. Kikakapu")
-    print("5. Pueo")
-    print("6. 'Ulae")
-    print("7. Ope'ape'a")
-    print("8. Happy-Face Spider")
+    print("2. Cow")
+    print("3. Duck")
+    print("4. Goat")
+    print("5. Ostrich")
+    print("6. Pig")
+    print("7. Sheep")
+    # print("8. Happy-Face Spider")
 
 
     # Capturing user input and assigning it to "choice" variable
@@ -48,39 +48,39 @@ Type M to return to the main menu.
 
     if choice == "2":
         os.system("cls" if os.name == "nt" else "clear")
-        animal = Duck()
-        create_animal_one_habitat(arboretum.duckHouses, arboretum, animal)
+        animal = Cow()
+        create_animal_one_habitat(arboretum.grazingFields, arboretum, animal)
 
 
     if choice == "3":
         os.system("cls" if os.name == "nt" else "clear")
-        animal = nenegoose()
-        create_animal_one_habitat(arboretum.grasslands, arboretum, animal)
+        animal = Duck()
+        create_animal_one_habitat(arboretum.duckHouses, arboretum, animal)
         
 
     if choice == "4":
         os.system("cls" if os.name == "nt" else "clear")
-        animal = Kikakapu()
-        create_animal_two_habitats(arboretum.rivers, arboretum.swamps, arboretum, animal)
+        animal = Goat()
+        create_animal_one_habitat(arboretum.grazingFields, arboretum, animal)
 
 
     if choice == "5":
         os.system("cls" if os.name == "nt" else "clear")
-        animal = Pueo()
-        create_animal_two_habitats(arboretum.grasslands, arboretum.forests, arboretum, animal)
+        animal = Ostrich()
+        create_animal_one_habitat(arboretum.grazingFields, arboretum, animal)
 
 
     if choice == "6":
         os.system("cls" if os.name == "nt" else "clear")
-        animal = Ulae()
-        create_animal_one_habitat(arboretum.coastlines, arboretum, animal)
+        animal = Pig()
+        create_animal_one_habitat(arboretum.grazingFields, arboretum, animal)
        
     if choice == "7":
         os.system("cls" if os.name == "nt" else "clear")
-        animal = Opeapea()
-        create_animal_two_habitats(arboretum.mountains, arboretum.forests, arboretum, animal)
+        animal = Sheep()
+        create_animal_one_habitat(arboretum.grazingFields, arboretum, animal)
 
-    if choice == "8":
-        os.system("cls" if os.name == "nt" else "clear")
-        animal = HHFSpider()
-        create_animal_one_habitat(arboretum.swamps, arboretum, animal)
+    # if choice == "8":
+    #     os.system("cls" if os.name == "nt" else "clear")
+    #     animal = HHFSpider()
+    #     create_animal_one_habitat(arboretum.swamps, arboretum, animal)

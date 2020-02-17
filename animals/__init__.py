@@ -10,3 +10,8 @@ from .pueo import Pueo
 
 from .Chicken import Chicken
 from .Duck import Duck
+from .Cow import Cow
+from .Goat import Goat
+from .Ostrich import Ostrich
+from .Pig import Pig
+from .Sheep import Sheep
