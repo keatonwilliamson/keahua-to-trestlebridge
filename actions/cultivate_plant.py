@@ -8,7 +8,7 @@
 
 
 import os
-from plants import RainbowEucalyptusTree, Sliversword, MountainAppleTree, BlueJadeVine
+from plants import RainbowEucalyptusTree, Sliversword, MountainAppleTree, BlueJadeVine, Sesame, Wildflower, Sunflower
 from .get_plant_biomes import get_plant_biomes
 from .show_plant_biomes import show_plant_biomes
 
@@ -29,10 +29,10 @@ def cultivate_plant(arboretum):
     print( ''' +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+
  |  K  e  a  h  u  a    A  r  b  o  r  e  t  u  m  |
  +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+\n''')
-    print("1. Rainbow Eucalyptus Tree")
-    print("2. Silversword")
-    print("3. Mountain Apple Tree")
-    print("4. Blue Jade Vine")
+    print("1. Sesame")
+    print("2. Wildflower")
+    print("3. Sunflower")
+    # print("4. Blue Jade Vine")
 
     # Capturing user input and assigning it to "choice" variable
     choice = input('''
@@ -45,21 +45,21 @@ Type M to return to the main menu.
     # is used as the basis for the next menu
 
     if choice == "1":
-        plant = RainbowEucalyptusTree()
+        plant = Sesame()
         plant_biomes = get_plant_biomes(plant, arboretum)
         show_plant_biomes(plant, plant_biomes)
     elif choice == "2":
-        plant = Sliversword()
+        plant = Wildflower()
         plant_biomes = get_plant_biomes(plant, arboretum)
         show_plant_biomes(plant, plant_biomes)
     elif choice == "3":
-        plant = MountainAppleTree()
+        plant = Sunflower()
         plant_biomes = get_plant_biomes(plant, arboretum)
         show_plant_biomes(plant, plant_biomes)
-    elif choice == "4":
-        plant = BlueJadeVine()
-        plant_biomes = get_plant_biomes(plant, arboretum)
-        show_plant_biomes(plant, plant_biomes)
+    # elif choice == "4":
+    #     plant = BlueJadeVine()
+    #     plant_biomes = get_plant_biomes(plant, arboretum)
+    #     show_plant_biomes(plant, plant_biomes)
     elif choice.lower() == "m":
         return
     else:

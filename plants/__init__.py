@@ -11,3 +11,6 @@ from .retree import RainbowEucalyptusTree
 from .silversword import Sliversword
 from .matree import MountainAppleTree
 from .bjvine import BlueJadeVine
+from .Sesame import Sesame
+from .Sunflower import Sunflower
+from .Wildflower import Wildflower
