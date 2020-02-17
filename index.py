@@ -52,9 +52,9 @@ def build_menu():
     print("1. Create Facility")
     print("2. Purchase Animals")
     print("3. Purchase Seeds")
-    print("4. Somethin")
-    print("5. Display Facility Report")
-    print("6. Exit")
+    # print("4. Somethin")
+    print("4. Display Farm Report")
+    print("5. Exit")
 
 
 def main_menu():
@@ -77,14 +77,14 @@ Choose a KILLER option.
     if choice == "3":
         cultivate_plant(keahua)
 
-    if choice == "4":
-        feed_animal()
+    # if choice == "4":
+    #     feed_animal()
 
-    if choice == "5":
+    if choice == "4":
         build_facility_report(keahua)
         pass
 
-    if choice != "6":
+    if choice != "5":
         main_menu()
 
 
